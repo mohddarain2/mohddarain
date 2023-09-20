@@ -1,0 +1,9 @@
+.searchForm{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main{
+    color: gray;
+    padding:20px 50px 50px 50px;
+}
