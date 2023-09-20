@@ -14,8 +14,9 @@ export const DataParentContext = createContext();
 
 const App = () => {
   const [data, setData] = useState([]);
+  const [singleData, setSeingleData] = useState({});
   return (
-    <DataParentContext.Provider value={{ data, setData }} >
+    <DataParentContext.Provider value={{ data, setData,singleData,setSeingleData }} >
       <BrowserRouter>
       <Navbar />
         <Routes>
