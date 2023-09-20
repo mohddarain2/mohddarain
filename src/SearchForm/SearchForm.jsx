@@ -14,7 +14,7 @@ const SearchForm = () => {
         const filterted =data.filter((item)=>{
             const launch = JSON.stringify(new Date(item.original_launch))
             console.log("original_launch",launch,typeof(launch))
-            return item.status.toLowerCase().includes(status) || item.type.toLowerCase().includes(types) || launch.includes(original)
+            return item.status.toLowerCase().includes(status) && item.type.toLowerCase().includes(types) && launch.includes(original)
         })
         setData(filterted)
     }
